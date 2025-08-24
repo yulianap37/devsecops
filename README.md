@@ -24,6 +24,12 @@ docker run -p 8000:8000 notes-app:dev
 
 You can access FastApi dashboard trough this endpoint : `{{URL-API}}/docs`
 
+## Audit
+```
+pip-audit -r requirements.txt
+pip-audit -r dev-requirements.txt
+```
+
 ## Endpoints
 - GET /healthz
 - POST /notes {title, content}
